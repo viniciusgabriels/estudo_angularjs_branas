@@ -3,17 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Angular JS</title>
-  <script src="angular.js"></script>
+  <title>Lista Telefônica</title>
+  <!-- Add bootstrap here. Look for minif. version -->
+  <script src="lib/angular/angular.min.js"></script>
   <script>
-    var app = angular.module("helloWorld", []);
-    app.controller("helloWorldController", function($scope) {
-      $scope.message = "Hello World!";
+    var app = angular.module("listaTelefonica", []);
+    app.controller("listaTelefonicaController", function($scope) {
+      $scope.app = "Lista Telefônica";
     });
   </script>
 </head>
 <body>
-    <div ng-controller="helloWorldController">
+    <div ng-controller="listaTelefonicaController">
       {{message}}
     </div>
 </body>
